@@ -1,0 +1,780 @@
+:root
+{
+--background-color: black;
+--primary-color: white;
+--secondary-color:green;
+--original-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+body {
+  background-color: var(--background-color);
+    /* background-color: rgb(50, 100,221);     */
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px;
+    padding: 20px;
+    
+   
+}
+
+.numberOneMovie
+{
+ 
+    /* max-width:100%; */
+    max-width: 500px;
+    height: auto;   
+    border-radius: 20px;
+    padding: 5%;  
+    
+   
+}
+.numberTwoMovie
+{
+    
+   
+    /* max-width:100%; */
+    max-width: 500px;
+    height: auto;   
+    border-radius: 20px;
+    padding: 5%;  
+    max-width: 100%;
+  
+
+}
+.numberThreeMovie
+{
+ 
+    /* max-width:100%; */
+    max-width: 500px;
+    height: auto;   
+    border-radius: 20px;
+    padding: 5%;  
+  
+}
+.main-searchbar
+{
+max-width: 100%;
+ height: 30px;
+ border-radius: 25px;
+ padding: 10px;
+ padding-bottom: 3px;
+ margin-bottom: 90px;
+}
+.main-searchbutton
+{
+ max-width: 100%;
+
+ height: 35px;
+ border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  align-items: center ;
+}
+.not-main-searchbar
+{
+ float: right;
+ max-width: 250px;
+ box-sizing: border-box;
+ gap: 10px;
+ 
+}
+.not-main-searchbutton
+{
+float: right;
+max-width: 250px;
+box-sizing: border-box;
+gap: 10px;
+}
+.movieName
+{
+height: 0hv;
+}  
+  
+  .image {
+    flex-basis: 40%   
+      }
+
+
+
+a
+{
+font-size: xx-large;
+
+
+
+
+}
+.underrubrik
+{
+    font-size: 80px;
+    color:white;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px;
+    height: 0vh;
+}
+.underrubrik-Film
+{
+font-size: 25px;
+border-color: green;
+font: bold;
+border: solid;
+text-align: center;
+}
+.yearOfMovie
+{
+color:white;
+text-align: center;
+height: 0vh;
+}
+p
+{
+ font-size: xx-large;
+ color: var(--primary-color);
+ padding: 8px;
+ 
+}
+h1 
+{
+ text-align: center;
+ color: var(--primary-color)
+ 
+}
+
+.toplist-movies {   
+    /* padding: 20px;    */
+    /* border-style: solid; */
+    /* border-radius: 30px;       */
+    gap: 25px;     
+    margin: 40px;
+
+    
+    border-color: var(--secondary-color);
+    text-align: center;
+ 
+ 
+    
+   
+}
+
+
+.line {
+    border-bottom: 1px solid rgb(82, 188, 230);
+    
+   
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+    
+    
+  }
+
+  .detail-line
+  {
+ 
+    border-bottom: 1px solid blue;   
+    width: 70%;
+
+  }
+  .text {
+    display: flex;
+    font-size: 50px;   
+    color: white;
+    padding: 10px;
+    text-align: left;    
+    margin-top: 10px;
+    
+  }
+  .headerText {
+    font-size: 80px;
+    padding-left: 20px;
+    color: white;
+    padding: 10px;
+    margin: 60px;
+  }
+
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+
+
+ul {
+    list-style-type: none;
+  
+  }
+nav li {
+float: left;
+margin: 0.3%;
+
+
+}
+nav li:hover
+{
+position: relative;
+top:5px;
+}
+
+footer{
+    background-color:green;
+   
+    text-align: center;
+    width: 100%;
+   bottom:0;
+  flex-wrap: wrap;
+ 
+   
+    
+}
+.footer-down{
+    bottom:0;
+}
+.footer-under
+{
+    text-align: left;
+    color: black;
+    
+}
+
+.footer-info
+{
+    text-align: left;
+    font-size: medium;
+    color: black;
+   
+}
+.footer-copyright
+{
+    text-align: right;
+    font-size: small;
+  
+}
+
+article 
+{  
+  flex:25%;
+  padding: 30px;
+  height: 50%;  
+  
+  
+}
+
+
+*
+{
+ box-sizing: border-box;
+ margin:0px;
+
+}
+
+.fun-nav
+{
+ height: 50px;
+ background-color:green;
+ 
+}
+.fun-header
+{
+ font-size: 8rem;
+ text-align: center;
+ border-bottom: 1px solid green;
+}
+.detail-header
+{
+    text-align: center;
+    font-size: 4rem;
+    
+}
+.fun-container
+{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.main-container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main-article img 
+{
+    margin: 20px;
+    size: 5px;
+    max-width:100%;
+    height:auto;
+    box-shadow: 0px 0px 3px 5px #af0202; 
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(167, 7, 7, 0.5));
+    filter: drop-shadow(12px 12px 30px rgba(138, 5, 5, 0.5));
+    
+    
+}
+.fun-article img {
+   
+    size: 50px;
+    max-width:100%;
+    height:auto;
+    box-shadow: 0px 0px 3px 5px #af0202; 
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(167, 7, 7, 0.5));
+    filter: drop-shadow(12px 12px 30px rgba(138, 5, 5, 0.5));
+    
+}
+
+.main-article img:hover{
+    box-shadow: 0px 0px 3px 5px #ffffff; 
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(255, 255, 255, 0.5));
+    filter: drop-shadow(12px 12px 30px rgba(255, 255, 255, 0.5));
+    cursor:pointer;
+    
+}
+.not-main-article img:hover
+{
+    box-shadow: 0px 0px 3px 5px #ffffff; 
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(255, 255, 255, 0.5));
+    filter: drop-shadow(12px 12px 30px rgba(255, 255, 255, 0.5));
+    cursor:pointer;
+}
+
+.movie-details
+{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+    padding: 3%;
+    max-width:100%;
+    border-bottom :1px solid #af0202;
+    
+    
+    
+    
+    
+}
+
+.detail-container
+{
+    display: flex;
+    justify-content: left;
+ 
+    
+  
+    
+}
+
+
+
+  .minus
+  {
+    background-color: #af0202;
+    max-width: 100%;
+    cursor:pointer;
+  }
+.plus-one
+ {
+    background-color: orange;
+    max-width: 100%;
+    cursor:pointer;
+}
+.plus-two
+{
+    background-color: greenyellow;
+    max-width: 100%;
+    cursor:pointer;
+}
+.plus-three 
+{
+ background-color: lime;
+ max-width: 100%;
+ cursor:pointer;
+}
+.plus-four
+{
+    background-color: green;
+    max-width: 100%;
+    cursor:pointer;
+}
+.plus-five
+{
+    background-color: darkgreen;
+    max-width: 100%;
+    cursor:pointer;
+    
+}
+  
+ 
+  
+
+
+  .not-main-article img{
+margin: 20px;
+
+max-width:100%;
+height:400px;
+box-shadow: 0px 0px 3px 5px #00a2ff; 
+-webkit-filter: drop-shadow(7px 7px 7px rgba(0, 0, 255, 0.5));
+filter: drop-shadow(7px 7px 10px rgba(55, 0, 255, 0.5));
+
+}
+    
+
+
+.article-data
+{
+margin: 3px 12px;
+max-width: 100%;
+}
+
+.article-bottom
+{
+    display: flex;
+    justify-content: space-between;
+height: 40px;
+color: aliceblue;
+align-items: center;
+max-width: 100%;
+}
+.detail-bottom
+{
+    display: flex;
+    justify-content: center;  
+height: 40px;
+color: aliceblue;
+background-color: #af0202;
+align-items: center;
+max-width: 100%;
+}
+
+.downgrade 
+{
+    font-size: 1.2rem;
+}
+.upgrade
+{
+    position: relative;
+    font-size: 1.2rem;
+}
+.upvotes
+{
+position: absolute;
+left: 14px;
+top:10px;
+}
+
+.fa-regular{
+    font-size: 2.2rem;
+}
+
+.fa-thumbs-up
+{
+    margin-bottom: 8px;
+    max-width: 100%;
+}
+
+.fa-thumbs-up:hover
+{
+    color: green;
+    cursor:pointer
+}
+
+.fa-thumbs-down
+{
+    margin-bottom: 8px;
+    max-width: 100%;
+}
+.fa-thumbs-down:hover
+{
+    color: red;
+}
+.fa-square
+{
+color: white;
+font-size: 5rem;
+}
+.top-movie-name
+{
+    font-size: x-large;
+    color: white;
+    text-align: center;
+}
+.top-movie-info
+{
+    font-size: medium;
+    max-width: 100%;
+    text-align: left;
+}
+.not-top-movie-info
+{
+    font-size: small;
+    max-width: 100%;
+    text-align: left;
+
+}
+.not-top-movie-name
+{
+    font-size: large;
+    color: white;
+    text-align: left;
+}
+
+
+article img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.search-for-movie
+{
+ text-align: center;
+}
+.topplista-text
+{
+color: aliceblue;
+text-align: center;
+font-size: 80px;
+}
+
+.review-form
+{
+    padding: 5%;
+   text-align: left;
+   
+}
+.write
+{
+    height: 200px;
+    width: 800px;
+}
+.reviews
+{
+   
+    background-color:white;  
+    color: black;
+    height: 30px;
+    width: 800px;
+    text-align: center;
+    border: #00a2ff;
+
+}
+
+.search-page-header
+{
+    text-align:center;
+}
+.search-page-underheader
+{
+    text-align: center;
+    font-size: medium;
+}
+
+.search-page-img
+{
+    
+    width: 150px;
+    height: auto;
+    
+   
+}
+.search-page-text {
+    font-size: 18px;
+    max-width: 300px;
+}
+.search-results {
+    display: flex;
+    flex-direction: column;
+    
+}
+.search-result-item {
+    border: 1px solid white;
+    border-radius: 1px;
+    display: flex;
+    align-items: left;
+    margin: 1%;    
+    justify-content: left;
+    
+}
+
+
+
+.article-bottom
+{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    color: aliceblue;
+    align-items: center;
+    max-width: 100%;
+}
+
+.member-container 
+{
+  background-color: #af0202;
+  max-width: 100%;  
+  height: 250px;
+  
+  display: flex;
+ 
+  
+}
+.profile-picture
+{
+    background-color: blue;   
+
+  padding: 5%;
+    max-width: 100%;   
+    margin-right: auto;
+    margin-left: auto;  
+    display: flex;
+  
+
+}
+
+.reviews
+{
+max-width: 100%;
+background-color: yellow;
+display: flex;
+border: 1px solid red ;
+justify-content: left;
+}
+.review-container
+{
+    background-color: #af0202;
+    max-width: 100%;   
+    display: flex;
+    justify-content:space-around;
+   
+   
+}
+.center-profile-picture
+{
+  margin-left: auto;
+  margin-right: auto;
+ max-width: 100%;
+ display: flex;
+ 
+}
+
+.center-profile-picture img
+{
+    border: 2px red solid;
+    height: 250px;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.fun-container
+{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+@media all and (max-width: 900px)
+{
+    article{     
+        flex:50% !important;
+        width: 50% !important; 
+    }
+}
+@media all and (max-width: 600px)
+{
+    article{        
+        flex:100% !important;
+        width: 100% !important; 
+    }
+}
+
+.white-font
+{
+    color: white;
+}
+
+.center-site
+{
+    width: 800px;
+    border: 1px soldis ghostwhite;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blue;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0 auto; /* Center website */
+    max-width: 800px; /* Max width */
+    padding: 20px;
+  }
+  
+  .heading {
+    font-size: 25px;
+    margin-right: 25px;
+  }
+  
+  .fa {
+    font-size: 25px;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  
+  /* Three column layout */
+  .side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+  }
+  
+  .middle {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+  }
+  
+  /* Place text to the right */
+  .right {
+    text-align: right;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The bar container */
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Individual bars */
+  .bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+  .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+  .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+  .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+  .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+  
+  /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+  @media (max-width: 400px) {
+    .side, .middle {
+      width: 100%;
+    }
+    /* Hide the right column on small screens */
+    .right {
+      display: none;
+    }
+  }
