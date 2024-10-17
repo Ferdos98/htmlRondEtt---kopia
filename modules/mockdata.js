@@ -1,3 +1,4 @@
+console.log("inne");
 export function getMovies (){
 
     {

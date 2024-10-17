@@ -19,6 +19,22 @@ body {
     padding: 20px;
     
    
+  }
+  .reviews-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px;
+    padding: 20px;
+    background-color: #00bcd4;
+    
+   
+  }
+.meter-container
+{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .numberOneMovie
@@ -552,12 +568,12 @@ font-size: 80px;
 .reviews
 {
    
-    background-color:white;  
-    color: black;
-    height: 30px;
-    width: 800px;
-    text-align: center;
-    border: #00a2ff;
+   display: flex;
+   gap: 5%;
+   margin-left: 5%;
+   margin-right: 5%;
+   padding-left: 2%;
+   
 
 }
 

@@ -1,9 +1,10 @@
 
-import { getMovies } from './modules/mockdata.js';
+import { getMovies } from '../modules/mockdata.js';
+
 import {
     getMoviesWithImages
    
-  } from "./modules/data.js";
+  } from "../modules/data.js";
   
 let movies = [];
 
