@@ -6,33 +6,29 @@
 <link rel = "stylesheet" href="stylesheet.css" >
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<script src="https://kit.fontawesome.com/b28fd2236e.js" crossorigin="anonymous"></script>
-</head>
-<body>
 
-    <nav class = fun-nav>
-        <li><a href = "index.html">Hem</a></li>
-        <li><a href = "movie-details.html">Meny</a></li>
-        <li><a href = "search-page.html">Min profil</a></li>   
+</head>
+<nav class = fun-nav>
+    <li><a href = "index.html">Hem</a></li>
+    <li><a href = "movie-details.html">Meny</a></li>
+    <li><a href = "search-page.html">Min profil</a></li>   
+    
+    
+    
+    <button class = "not-main-searchbutton" type ="submit">Sök</button >               
+        <input class ="not-main-searchbar" type="text" placeholder="Sök film.." >
         
         
-        
-        <button class = "not-main-searchbutton" type ="submit">Sök</button >               
-            <input class ="not-main-searchbar" type="text" placeholder="Sök film.." >
-            
-            
-        </nav>
-        <style>
-            /* body {
-                background-image: url("blood-moon-night-sky.webp");
-            } */
-            </style>
+    </nav>
+<body>
+    
+
 
 
         <div class = "flex-container" >
             
             <div class = "center-profile-picture" >
-                <img class = "center-profile-picture"  >
+                <img class = "center-profile-picture" src = "luffypp.jpg" >
                 
          
             </div>
@@ -40,52 +36,54 @@
         
         
         
-        <div class = "review-container">
-            <h1>Ferdos reviews</h1>
-        </div>
-        <div class = "review-container">
-         
-        </div>
-        
-        <div class = "reviews">
-            <div class = "meter-container">
+        <div class = "rating-container">
+           
+            <div class = "genre-container">
                 
                 <div>
-                    <meter value = "10" min = "0" max = "10"></meter>
-                    <label for="action-bar">Action</label>
+                    <meter id="action-bar" value = "10" min = "0" max = "10"></meter>
+                    <label for="action-bar" id="crime">Action</label>
                     
                 </div> 
+                
+                
                 <div>
-                    <meter value = "8" min = "0" max = "10"></meter>
-                    <label for="action-bar">Comedy</label>
+                    <meter id ="comedy-bar" value = "8" min = "0" max = "10"></meter>
+                    <label for="comedy-bar" id="comedy">Comedy</label>
                     
                 </div>
                 <div>
-                    <meter value = "6" min = "0" max = "10"></meter>
-                    <label for="action-bar">Anime</label>
-
+                    <meter id="fantasy-bar" value = "6" min = "0" max = "10"></meter>
+                    <label for="fantasy-bar" id="fantasy">Fantasy</label>
+                    
                 </div>
                 <div>
-                    <meter value = "4" min = "0" max = "10"></meter>
-                    <label for="action-bar">Drama</label>
+                    <meter id="drama-bar" value = "4" min = "0" max = "10"></meter>
+                    <label for="drama-bar" id="drama">Drama</label>
                     
                     
                 </div>
                 <div>
-                    <meter value = "2" min = "0" max = "10"></meter>
-                    <label for="action-bar">Föreläsning</label>
-
+                    <meter id ="romance-bar" value = "2" min = "0" max = "10"></meter>
+                    <label for="romance-bar" id ="romance">Romance</label>
+                    
+                   
+                    
+                    
                 </div>
                 
             </div>
         </div>
         
         <div class = "review-container">
-         <p>filmer </p>
+          
         </div>
-    
+        
+        
+        
+
     </body>  
-    <script type = "modules" src = "/js/app.js" ></script>
+    <script type = "module" src = "js/app.js" ></script>
     </html>
     
     

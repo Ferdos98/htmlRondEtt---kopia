@@ -30,12 +30,35 @@ body {
     
    
   }
-.meter-container
-{
-  display: flex;
-  flex-direction: column;
+  #Action
+  {
+    cursor:pointer;
+  }
+
+  #Comedy
+  {
+    cursor: pointer;
+  }
+  #Fantasy
+  {
+    cursor: pointer;
+  }
+  #Drama
+  {
+    cursor: pointer;
+  }
+  #Romance
+  {
+    cursor: pointer;
+  }
+.rating-container
+{ 
+  background-color: #00bcd4;
   cursor: pointer;
+
 }
+
+
 
 .numberOneMovie
 {
@@ -90,21 +113,7 @@ max-width: 100%;
   box-sizing: border-box;
   align-items: center ;
 }
-.not-main-searchbar
-{
- float: right;
- max-width: 250px;
- box-sizing: border-box;
- gap: 10px;
- 
-}
-.not-main-searchbutton
-{
-float: right;
-max-width: 250px;
-box-sizing: border-box;
-gap: 10px;
-}
+
 .movieName
 {
 height: 0hv;
@@ -227,52 +236,6 @@ ul {
     list-style-type: none;
   
   }
-nav li {
-float: left;
-margin: 0.3%;
-
-
-}
-nav li:hover
-{
-position: relative;
-top:5px;
-}
-
-footer{
-    background-color:green;
-   
-    text-align: center;
-    width: 100%;
-   bottom:0;
-  flex-wrap: wrap;
- 
-   
-    
-}
-.footer-down{
-    bottom:0;
-}
-.footer-under
-{
-    text-align: left;
-    color: black;
-    
-}
-
-.footer-info
-{
-    text-align: left;
-    font-size: medium;
-    color: black;
-   
-}
-.footer-copyright
-{
-    text-align: right;
-    font-size: small;
-  
-}
 
 article 
 {  
@@ -291,12 +254,7 @@ article
 
 }
 
-.fun-nav
-{
- height: 50px;
- background-color:green;
- 
-}
+
 .fun-header
 {
  font-size: 8rem;
@@ -439,7 +397,11 @@ filter: drop-shadow(7px 7px 10px rgba(55, 0, 255, 0.5));
 }
     
 
+.stars {
 
+  color: gold;     /* Färgen på stjärnorna */
+
+}
 .article-data
 {
 margin: 3px 12px;
@@ -454,6 +416,7 @@ height: 40px;
 color: aliceblue;
 align-items: center;
 max-width: 100%;
+z-index: 1000;
 }
 .detail-bottom
 {
@@ -568,14 +531,15 @@ font-size: 80px;
 .reviews
 {
    
-   display: flex;
-   gap: 5%;
-   margin-left: 5%;
-   margin-right: 5%;
-   padding-left: 2%;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
    
 
-}
+
 
 .search-page-header
 {
@@ -649,22 +613,33 @@ font-size: 80px;
 
 }
 
-.reviews
+.reviewer
 {
 max-width: 100%;
+
 background-color: yellow;
 display: flex;
-border: 1px solid red ;
-justify-content: left;
+
+
 }
 .review-container
 {
-    background-color: #af0202;
+   background-color: black;
     max-width: 100%;   
-    display: flex;
-    justify-content:space-around;
+    display: flex; 
+      margin: 0 auto; 
+    max-width: 800px; 
+    padding: 20px;
+    
    
    
+}
+.review-container img {
+
+  box-shadow: 0px 0px 3px 5px #ffffff; 
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(255, 255, 255, 0.5));
+  filter: drop-shadow(12px 12px 30px rgba(255, 255, 255, 0.5));
+  cursor:pointer;
 }
 .center-profile-picture
 {
@@ -673,14 +648,19 @@ justify-content: left;
  max-width: 100%;
  display: flex;
  
+ 
 }
 
 .center-profile-picture img
 {
-    border: 2px red solid;
+  
     height: 250px;
     max-width: 100%;
     border-radius: 50%;
+    box-shadow: 0px 0px 3px 5px #ffffff; 
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(255, 255, 255, 0.5));
+    filter: drop-shadow(12px 12px 30px rgba(255, 255, 255, 0.5));
+    cursor:pointer;
 }
 
 .fun-container
@@ -720,77 +700,109 @@ justify-content: left;
     background-color: blue;
 }
 
-* {
-    box-sizing: border-box;
-  }
+
   
-  body {
+  /* body {
     font-family: Arial;
-    margin: 0 auto; /* Center website */
-    max-width: 800px; /* Max width */
+    margin: 0 auto; 
+    max-width: 800px; 
     padding: 20px;
   }
+   */
+
   
-  .heading {
-    font-size: 25px;
-    margin-right: 25px;
-  }
   
-  .fa {
-    font-size: 25px;
-  }
-  
-  .checked {
-    color: orange;
-  }
-  
-  /* Three column layout */
-  .side {
+  nav li {
     float: left;
-    width: 15%;
-    margin-top: 10px;
-  }
+    margin: 0.3%;
+    position: sticky;
+    
+    }
+    nav li:hover
+    {
+    position: relative;
+    top:5px;
+    }
+    .fun-nav
+    {
+     max-width: 100%;
+     height: 35px;
+     background-color:gray;
+     position: sticky;
+     top:0;
+     z-index: 1000;
+     
+     
+    }
+    
+    nav a 
+    {
+      font-size: large;
+      font:bold;
+       color: white;
+       text-decoration: underline;
+     
+
+    }
   
-  .middle {
-    float: left;
-    width: 70%;
-    margin-top: 10px;
-  }
+    .not-main-searchbar
+    {
+    display: flex;
+    float: right;
+     align-items: center;   
+      gap: 10px;
+    
+      
+     
+    }
+    .not-main-searchbutton
+    {
+    float: right;
+    color:green;
+ 
+    
+   
+    
+    
+    }
+
   
-  /* Place text to the right */
-  .right {
-    text-align: right;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* The bar container */
-  .bar-container {
-    width: 100%;
-    background-color: #f1f1f1;
-    text-align: center;
-    color: white;
-  }
-  
-  /* Individual bars */
-  .bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
-  .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
-  .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
-  .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
-  .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
-  
-  /* Responsive layout - make the columns stack on top of each other instead of next to each other */
-  @media (max-width: 400px) {
-    .side, .middle {
+
+    footer{
+      background-color:grey;
+     
+      text-align: center;
       width: 100%;
-    }
-    /* Hide the right column on small screens */
-    .right {
-      display: none;
-    }
+     bottom:0;
+    flex-wrap: wrap;
+   
+     
+      
   }
+  .footer-down{
+      bottom:0;
+  }
+  .footer-under
+  {
+      text-align: left;
+      color: black;
+      
+  }
+  
+  .footer-info
+  {
+      text-align: left;
+      font-size: medium;
+      color: black;
+     
+  }
+  .footer-copyright
+  {
+      text-align: right;
+      font-size: small;
+    
+  }
+  
+  
+ 
+  
