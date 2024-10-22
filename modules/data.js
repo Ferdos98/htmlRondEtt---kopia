@@ -26,7 +26,7 @@ export function renderStars(rating) {
   return stars;
 }
 
-const movieReviewCount = movieHasReview(movies); 
+// const movieReviewCount = movieHasReview(movies); 
 
 export function movieHasReview (movies)
 {
@@ -46,7 +46,7 @@ export function movieHasReview (movies)
   });
   return genreCount; 
 }
-console.log(movieReviewCount);
+// console.log(movieReviewCount);
 
 
 export function totalMovieReviews (movies)
@@ -64,10 +64,10 @@ export function totalMovieReviews (movies)
   return movieReviewCount;
   
 }
-const totalMovieReviewCount = totalMovieReviews(movies);
-console.log (totalMovieReviewCount);
+// const totalMovieReviewCount = totalMovieReviews(movies);
+// console.log (totalMovieReviewCount);
 
-const reviewCount = seriesHasReview(movies); 
+// const reviewCount = seriesHasReview(movies); 
 export function seriesHasReview (movies)
 {
   let seriesGenreCount = {};
@@ -86,7 +86,7 @@ export function seriesHasReview (movies)
   });
   return seriesGenreCount; 
 }
-console.log(reviewCount);
+// console.log(reviewCount);
 
 
 export function totalSerieReviews (movies)
@@ -104,13 +104,57 @@ export function totalSerieReviews (movies)
   return seriesReviewCount;
   
 }
-const totalReviewCount = totalSerieReviews(movies);
-console.log (totalReviewCount);
+// const totalReviewCount = totalSerieReviews(movies);
+// console.log (totalReviewCount);
 
+
+export function totalAverageRating (movies)
+{
+  let averageRating = 0;
+  let movieCount = 0;
+
+  movies.forEach (movie =>
+  {
+    if (movie.contribution.has_reviewed === true)
+    {
+     movieCount++;
+    }
+    if (movie.cmdb_score >= 0)
+    {
+      averageRating += movie.cmdb_score;
+    }
+  });
+  
+return averageRating / movieCount;
+ 
+}
    
 
-
+// const average = totalAverageRating(movies);
+// console.log (average);
    
+export function howDoesPoppeFeel(totalAverageRating)
+{  
+  let imageSrc = '';
+
+  if ( totalAverageRating <= 0 )
+  {
+      imageSrc = "poppe0.png";
+  } else if (totalAverageRating > 1 && totalAverageRating <= 2) {
+    imageSrc = "poppe1.png";
+  } else if (totalAverageRating > 2 && totalAverageRating <= 3) {
+    imageSrc = "poppe2.png";
+  } else if (totalAverageRating > 3 && totalAverageRating <= 4) {
+    imageSrc = "poppe3.png";
+  } else if (totalAverageRating > 4 && totalAverageRating < 5) {
+    imageSrc = "poppe4.png";
+  }
+  else
+  {
+  imageSrc = "poppe5.png";
+  }
+  return imageSrc;
+}
     
  
  

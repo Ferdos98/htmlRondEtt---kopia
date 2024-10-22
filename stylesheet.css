@@ -9,7 +9,7 @@
 }
 body {
   background-color: var(--background-color);
-    /* background-color: rgb(50, 100,221);     */
+   
 }
 .flex-container {
     display: flex;
@@ -18,8 +18,22 @@ body {
     gap:20px;
     padding: 20px;
     
+    
    
   }
+  .profile-container
+  {
+   
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  
+    background-color: gray;
+    max-width: 100%;    
+    margin: 0 auto; 
+    max-width: 800px;         
+  
+  }
+
   .reviews-container {
     display: flex;
     justify-content: center;
@@ -51,19 +65,44 @@ body {
   {
     cursor: pointer;
   }
+
+
 .rating-container
 { 
-  background-color: #00bcd4;
-  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;  
+  background-color: gray;
+  max-width: 100%;    
+  margin: 0 auto; 
+  max-width: 800px; 
+    
+  }
 
+ 
+.poppe-image {
+  max-width: 100%; 
+  width: 120px;
+  height: 120px;  
+}
+.poppe-container
+{
+  position: relative;
+ display: flex;
+  flex: 70%;
+  
 }
 
+.poppe-container p
+{
+position: absolute;
+}
 
 
 .numberOneMovie
 {
  
-    /* max-width:100%; */
+
     max-width: 500px;
     height: auto;   
     border-radius: 20px;
@@ -74,8 +113,7 @@ body {
 .numberTwoMovie
 {
     
-   
-    /* max-width:100%; */
+ 
     max-width: 500px;
     height: auto;   
     border-radius: 20px;
@@ -87,7 +125,7 @@ body {
 .numberThreeMovie
 {
  
-    /* max-width:100%; */
+ 
     max-width: 500px;
     height: auto;   
     border-radius: 20px;
@@ -171,9 +209,7 @@ h1
 }
 
 .toplist-movies {   
-    /* padding: 20px;    */
-    /* border-style: solid; */
-    /* border-radius: 30px;       */
+   
     gap: 25px;     
     margin: 40px;
 
@@ -250,6 +286,7 @@ article
 *
 {
  box-sizing: border-box;
+ padding: 0;
  margin:0px;
 
 }
@@ -399,7 +436,10 @@ filter: drop-shadow(7px 7px 10px rgba(55, 0, 255, 0.5));
 
 .stars {
 
-  color: gold;     /* Färgen på stjärnorna */
+  color: gold; 
+  max-width: 100%;
+  font-size: 40px;
+
 
 }
 .article-data
@@ -624,12 +664,17 @@ display: flex;
 }
 .review-container
 {
-   background-color: black;
-    max-width: 100%;   
-    display: flex; 
-      margin: 0 auto; 
-    max-width: 800px; 
-    padding: 20px;
+ 
+
+display: flex;
+justify-content: center;
+flex-wrap: wrap;  
+background-color: gray;
+max-width: 100%;    
+margin: 0 auto; 
+max-width: 800px; 
+  
+
     
    
    
@@ -640,14 +685,15 @@ display: flex;
   -webkit-filter: drop-shadow(12px 12px 7px rgba(255, 255, 255, 0.5));
   filter: drop-shadow(12px 12px 30px rgba(255, 255, 255, 0.5));
   cursor:pointer;
+
 }
+
 .center-profile-picture
 {
   margin-left: auto;
   margin-right: auto;
  max-width: 100%;
- display: flex;
- 
+ display: flex;  
  
 }
 
@@ -700,15 +746,63 @@ display: flex;
     background-color: blue;
 }
 
+ 
+
+   .review-count-container {
+     position: absolute;
+    left: 50%;   
+    color: white;  
+    text-align: center;
+    z-index: 1000;
+    
+}
+
+
+.average-rating {
+  position: absolute;
+margin-top: 9vh;
+margin-left:-20.2vh;
+font-size: large;
 
   
-  /* body {
-    font-family: Arial;
-    margin: 0 auto; 
-    max-width: 800px; 
-    padding: 20px;
-  }
-   */
+}
+
+.alex-container
+{
+  position: relative ;
+  display: flex;          
+  flex-direction: column; 
+}
+
+.total-movie {
+  position: absolute ;
+  margin-top: 7vh;
+  max-width: 100%; 
+  margin-left: -3vh;
+}
+
+.total-series {
+  position: absolute;
+margin-left: 13vh;
+max-width: 100%;
+
+
+
+}
+.poppe-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+}
+
+.review-count-container p
+{
+  display: inline-block;
+
+  color: black;  
+
+}
 
   
   

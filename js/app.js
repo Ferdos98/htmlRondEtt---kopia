@@ -1,13 +1,12 @@
 import { getMovies } from '../modules/mockdata.js';
 
-import { generateMovies, filterMovieByGenre } from "../modules/ui.js"; 
+import { generateMovies, filterMovieByGenre} from "../modules/ui.js"; 
 let movies = [];
 
 document.addEventListener("DOMContentLoaded", async() => {
 movies = await getMovies();
 await generateMovies(movies);
 filterMovieByGenre(movies); 
-
 });
 
 
