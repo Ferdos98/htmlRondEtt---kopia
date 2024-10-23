@@ -27,10 +27,9 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;  
-    background-color: gray;
-    max-width: 100%;    
-    margin: 0 auto; 
-    max-width: 800px;         
+    background-color: gray;    
+     margin: 0 auto; 
+    max-width: 1200px;         
   
   }
 
@@ -72,10 +71,9 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;  
-  background-color: gray;
-  max-width: 100%;    
-  margin: 0 auto; 
-  max-width: 800px; 
+  background-color: gray;    
+   margin: 0 auto; 
+  max-width: 1200px;   
     
   }
 
@@ -665,14 +663,12 @@ display: flex;
 .review-container
 {
  
-
-display: flex;
-justify-content: center;
-flex-wrap: wrap;  
-background-color: gray;
-max-width: 100%;    
-margin: 0 auto; 
-max-width: 800px; 
+  display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  
+    background-color: gray;    
+     margin: 0 auto; 
+    max-width: 1200px;   
   
 
     
@@ -723,6 +719,12 @@ max-width: 800px;
         flex:50% !important;
         width: 50% !important; 
     }
+    .rating-container, .profile-container, .review-container
+    {
+      flex:100% !important;
+      width: 100% !important; 
+        background-color: orange;
+    }
 }
 @media all and (max-width: 600px)
 {
@@ -730,7 +732,15 @@ max-width: 800px;
         flex:100% !important;
         width: 100% !important; 
     }
+    .rating-container, .profile-container, .review-container
+    {
+      flex:100% !important;
+      width: 100% !important; 
+      background-color: rgb(192, 255, 226);
+    }
 }
+  
+
 
 .white-font
 {
@@ -747,8 +757,7 @@ max-width: 800px;
 }
 
  
-
-   .review-count-container {
+ .review-count-container {
      position: absolute;
     left: 50%;   
     color: white;  
@@ -760,8 +769,8 @@ max-width: 800px;
 
 .average-rating {
   position: absolute;
-margin-top: 9vh;
-margin-left:-20.2vh;
+margin-top: 8vh;
+margin-left:-18.4vh;
 font-size: large;
 
   
@@ -810,6 +819,7 @@ max-width: 100%;
     float: left;
     margin: 0.3%;
     position: sticky;
+    
     
     }
     nav li:hover
@@ -863,15 +873,13 @@ max-width: 100%;
   
 
     footer{
-      background-color:grey;
-     
-      text-align: center;
+      background-color:grey;     
+      text-align: center;      
       width: 100%;
-     bottom:0;
-    flex-wrap: wrap;
-   
-     
-      
+      position: fixed;
+      bottom:0;
+     flex-wrap: wrap;  
+
   }
   .footer-down{
       bottom:0;

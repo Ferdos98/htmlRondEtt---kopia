@@ -1,17 +1,19 @@
 import { getMovies } from './mockdata.js';
 const movies = getMovies();
 
+
+
+
 export function hasGenre(movie, genre) {
  
-  for (let i = 0; i < movie.genres.length; i++) {
- 
-      if (movie.genres[i].name.toLowerCase() === genre) 
+  for (let i = 0; i < movie.genres.length; i++) 
+    {
+       if (movie.genres[i].name.toLowerCase() === genre) 
       {       
         return true;
       }
-  }
-  return false;
-}
+  } 
+};
 
 
 
@@ -146,7 +148,8 @@ export function howDoesPoppeFeel(totalAverageRating)
     imageSrc = "poppe2.png";
   } else if (totalAverageRating > 3 && totalAverageRating <= 4) {
     imageSrc = "poppe3.png";
-  } else if (totalAverageRating > 4 && totalAverageRating < 5) {
+  } 
+  else if (totalAverageRating > 4 && totalAverageRating < 5) {
     imageSrc = "poppe4.png";
   }
   else

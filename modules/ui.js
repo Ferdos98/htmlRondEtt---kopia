@@ -15,19 +15,19 @@ export async function generateMovies(movies){
      
      const movieReviews = totalMovieReviews(movies);
     
-     const totalReviewsElement = document.getElementById("total-movie-reviews");
-     totalReviewsElement.textContent = movieReviews;
+     const totalReviews = document.getElementById("total-movie-reviews");
+     totalReviews.textContent = movieReviews;
       
 
      const seriesReviews = totalSerieReviews(movies);
     
-     const totalSeriesElement = document.getElementById("total-series-reviews");
-     totalSeriesElement.textContent = seriesReviews;
+     const totalSeries = document.getElementById("total-series-reviews");
+     totalSeries.textContent = seriesReviews;
 
     
 
-    const averageRatingElement = document.getElementById("average-rating");
-    averageRatingElement.textContent = averageRating;
+    const averageMovieRating = document.getElementById("average-rating");
+    averageMovieRating.textContent = averageRating;
 
     
      const poppeImg = document.createElement("img");
