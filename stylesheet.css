@@ -267,8 +267,7 @@ h1
 
 
 ul {
-    list-style-type: none;
-  
+    list-style-type: none;  
   }
 
 article 
@@ -276,8 +275,7 @@ article
   flex:25%;
   padding: 30px;
   height: 50%;  
-  
-  
+    
 }
 
 
@@ -286,7 +284,6 @@ article
  box-sizing: border-box;
  padding: 0;
  margin:0px;
-
 }
 
 
@@ -358,25 +355,14 @@ article
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
     padding: 3%;
     max-width:100%;
-    border-bottom :1px solid #af0202;
-    
-    
-    
-    
-    
+    border-bottom :1px solid #af0202;                  
 }
 
 .detail-container
 {
     display: flex;
-    justify-content: left;
- 
-    
-  
-    
-}
-
-
+    justify-content: left;       
+    }
 
   .minus
   {
@@ -414,11 +400,7 @@ article
     max-width: 100%;
     cursor:pointer;
     
-}
-  
- 
-  
-
+}     
 
   .not-main-article img{
 margin: 20px;
@@ -723,7 +705,7 @@ display: flex;
     {
       flex:100% !important;
       width: 100% !important; 
-        background-color: orange;
+        background-color: red;
     }
 }
 @media all and (max-width: 600px)
@@ -739,7 +721,33 @@ display: flex;
       background-color: rgb(192, 255, 226);
     }
 }
-  
+/* @media all and (max-width: 3000px)
+{
+    article{     
+        flex:50% !important;
+        width: 50% !important; ftot
+    }
+    .rating-container, .profile-container, .review-container
+    {
+      flex:100% !important;
+      width: 100% !important; 
+        background-color: orange;
+        
+    }
+    .total-series
+    {        
+         right: -120px; 
+    }
+    .total-movie
+    {
+      top:-25px;
+    }
+    .average-rating
+    {
+     right: 4px;
+    }
+    } */
+
 
 
 .white-font
@@ -766,38 +774,77 @@ display: flex;
     
 }
 
-
+.first-last-name
+{
+  display: flex;
+  align-items: center;
+}
 .average-rating {
   position: absolute;
-margin-top: 8vh;
-margin-left:-18.4vh;
-font-size: large;
+  font-size: large;
+  left:60px;
+  top:110px;
+  color:green;
 
   
 }
 
 .alex-container
-{
+{  
   position: relative ;
   display: flex;          
-  flex-direction: column; 
+  flex-direction: row; 
 }
 
 .total-movie {
   position: absolute ;
-  margin-top: 7vh;
-  max-width: 100%; 
-  margin-left: -3vh;
+  top: 50px;
+  left:100px;
+  color: pink;
 }
 
 .total-series {
   position: absolute;
-margin-left: 13vh;
-max-width: 100%;
-
-
-
+  left: 70px;
+  color:peru;
+  top: 90px;
 }
+
+#poppes-box {
+  position: relative;
+  width: 180px;
+ 
+  height: 180px;
+}
+
+#poppe-img {
+  width:100%;
+}
+
+#tv-count-box {
+  position: relative;
+  width: 180px;
+  
+  height: 180px;
+}
+
+#tv-img {
+  width: 100%;
+}
+
+#movie-count-box {
+  position: relative;
+  width: 180px;
+  
+  height: 180px;
+}
+
+#movie-img {
+  width: 100%;
+  height: 100%;
+}
+
+
 .poppe-container {
   position: relative;
   display: flex;
@@ -818,8 +865,7 @@ max-width: 100%;
   nav li {
     float: left;
     margin: 0.3%;
-    position: sticky;
-    
+    position: sticky;    
     
     }
     nav li:hover
@@ -835,8 +881,7 @@ max-width: 100%;
      position: sticky;
      top:0;
      z-index: 1000;
-     
-     
+          
     }
     
     nav a 
@@ -846,7 +891,6 @@ max-width: 100%;
        color: white;
        text-decoration: underline;
      
-
     }
   
     .not-main-searchbar
@@ -855,20 +899,14 @@ max-width: 100%;
     float: right;
      align-items: center;   
       gap: 10px;
-    
-      
-     
+               
     }
     .not-main-searchbutton
     {
     float: right;
-    color:green;
- 
+    color:green;        
     
-   
-    
-    
-    }
+        }
 
   
 

@@ -15,6 +15,17 @@ export function hasGenre(movie, genre) {
   } 
 };
 
+export function hasName(movie, name) {
+ 
+  for (let i = 0; i < movie.name.length; i++) 
+    {
+       if (movie.name[i].name.toLowerCase() === name) 
+      {       
+        return true;
+      }
+  } 
+};
+
 
 
 
@@ -27,6 +38,7 @@ export function renderStars(rating) {
   }
   return stars;
 }
+
 
 // const movieReviewCount = movieHasReview(movies); 
 

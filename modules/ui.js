@@ -1,13 +1,13 @@
 // import { getUniqueMovieTypes } from "./data.js";
-import { hasGenre } from "./data.js";
+import { hasGenre, hasName } from "./data.js";
 import { renderStars, howDoesPoppeFeel, movieHasReview, totalMovieReviews, seriesHasReview, totalSerieReviews, totalAverageRating } from "./data.js";
 
 export async function generateMovies(movies){
    
     const container = document.querySelector(".review-container");    
-    const poppeContainer = document.querySelector(".poppe-container"); 
+    //const poppeContainer = document.querySelector(".poppe-container"); 
      container.innerHTML ="";  
-     poppeContainer.innerHTML = ""; 
+     //poppeContainer.innerHTML = ""; 
      
        
      const averageRating = totalAverageRating(movies);
@@ -30,23 +30,10 @@ export async function generateMovies(movies){
     averageMovieRating.textContent = averageRating;
 
     
-     const poppeImg = document.createElement("img");
+     const poppeImg = document.querySelector("#poppe-img");
  
      poppeImg.src = poppeImageSrc;
-     poppeImg.classList.add("poppe-image");
-     poppeContainer.appendChild(poppeImg);     
-
-     const tvImg = document.createElement("img");
-     tvImg.src = "tvNy.png";     
-     tvImg.classList.add("poppe-image");
-     poppeContainer.appendChild(tvImg);      
-         
-
-     const cameraImg = document.createElement("img");
-    
-     cameraImg.src = "projektor.png";
-     cameraImg.classList.add ("poppe-image");
-     poppeContainer.appendChild(cameraImg);
+   
     
      
   
@@ -88,7 +75,8 @@ export async function generateMovies(movies){
 
 
 
-export function filterMovieByGenre(movies) {
+export function filterMovieByGenre(movies) 
+{
     const genreId = document.querySelector(".rating-container")
  
    
@@ -103,6 +91,27 @@ export function filterMovieByGenre(movies) {
 
             generateMovies(filteredMovies);  
         }
+    })
+};
+
+
+export function getNames(movies) 
+{
+    const nameId = document.querySelector(".rating-container")
+
+   
+    nameId.addEventListener("click", function(event) {
+        if (event.target.tagName.toLowerCase() === 'label') {
+           
+            const name = event.target.getAttribute("name"); 
+           
+            const filteredMovies = movies.filter(movie => {
+                return hasName(movie, name);
+            });           
+            
+            generateMovies(movie);  
+        }
+        
     })
 };
 
